@@ -157,6 +157,41 @@
 99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ecd333db4667af4b16c39b9a4dbd5cb8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 100            android:value="@integer/google_play_services_version" />
 100-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ecd333db4667af4b16c39b9a4dbd5cb8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-101    </application>
-102
-103</manifest>
+101
+102        <activity
+102-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:27:9-31:75
+103            android:name="net.openid.appauth.AuthorizationManagementActivity"
+103-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:28:13-78
+104            android:exported="false"
+104-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:29:13-37
+105            android:launchMode="singleTask"
+105-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:30:13-44
+106            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+106-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:31:13-72
+107        <activity
+107-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:32:9-43:20
+108            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+108-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:33:13-74
+109            android:exported="true" >
+109-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:34:13-36
+110            <intent-filter>
+110-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:35:13-42:29
+111                <action android:name="android.intent.action.VIEW" />
+111-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:36:17-69
+111-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:36:25-66
+112
+113                <category android:name="android.intent.category.DEFAULT" />
+113-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:38:17-76
+113-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:38:27-73
+114                <category android:name="android.intent.category.BROWSABLE" />
+114-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:39:17-78
+114-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:39:27-75
+115
+116                <data android:scheme="com.auth0.flutterdemo" />
+116-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:41:17-67
+116-->[net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:41:23-64
+117            </intent-filter>
+118        </activity>
+119    </application>
+120
+121</manifest>

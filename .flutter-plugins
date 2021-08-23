@@ -1,12 +1,20 @@
 # This is a generated file; do not edit or check into version control.
 barcode_scan=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\barcode_scan-3.0.1\\
+flutter_appauth=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_appauth-0.9.2+6\\
 flutter_plugin_android_lifecycle=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_plugin_android_lifecycle-1.0.11\\
+flutter_secure_storage=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_secure_storage-3.3.5\\
 geolocator=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\geolocator-6.2.1\\
 geolocator_web=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\geolocator_web-1.0.1\\
 image_picker=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\image_picker-0.6.7+22\\
 path_provider=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider-1.6.11\\
 path_provider_linux=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
 path_provider_macos=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_macos-0.0.4+3\\
+path_provider_windows=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-0.0.5\\
+shared_preferences=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.12+4\\
+shared_preferences_linux=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_linux-0.0.2+4\\
+shared_preferences_macos=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-0.0.1+11\\
+shared_preferences_web=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_web-0.1.2+7\\
+shared_preferences_windows=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_windows-0.0.2+3\\
 url_launcher=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\url_launcher-6.0.5\\
 url_launcher_linux=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\url_launcher_linux-2.0.1\\
 url_launcher_macos=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\url_launcher_macos-2.0.1\\

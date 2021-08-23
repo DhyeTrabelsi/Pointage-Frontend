@@ -1,14 +1,57 @@
 import 'package:flutter/material.dart';
 import 'package:pointage/user/home.dart';
-
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import '../Widget/bezierContainer.dart';
 
+final passwordController = TextEditingController();
+final userController = TextEditingController();
+
 class LoginPage extends StatefulWidget {
-  @override
   _LoginPageState createState() => _LoginPageState();
 }
 
+//'http://10.0.2.2:8000/employes/login'
+//{"username":userController , "password": passwordController}
 class _LoginPageState extends State<LoginPage> {
+  var login = new LoginPage();
+
+  List mytext = [];
+
+  var data;
+
+  Future<List> getData() async {
+    String url = 'http://10.0.2.2:8000/employes/login';
+    var response = await http.post(Uri.encodeFull(url), headers: {
+      "Accept": "application/json"
+    }, body: {
+      "username": userController.text,
+      "password": passwordController.text
+    });
+    data = (json.decode(response.body));
+    if (data["jwt"] != null) {
+      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+    } else {
+      showDialog<String>(
+          context: context,
+          builder: (BuildContext context) => AlertDialog(
+                title: const Text('invalid account!',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                content: const Text(
+                  "This user is not associated with an account. Find your account and login.",
+                  textAlign: TextAlign.justify,
+                ),
+                actions: <Widget>[
+                  TextButton(
+                    onPressed: () => Navigator.pop(context, 'OK'),
+                    child: const Text('OK'),
+                  ),
+                ],
+              ));
+    }
+    //  return List<Map<String, dynamic>>.from(json.decode(response.body));
+  }
+
   Widget _backButton() {
     return InkWell(
       onTap: () {
@@ -48,6 +91,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           TextField(
               obscureText: isPassword,
+              controller: userController,
               decoration: InputDecoration(
                   hintText: 'Enter your user name',
                   border: InputBorder.none,
@@ -73,6 +117,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           TextField(
               obscureText: isPassword,
+              controller: passwordController,
               decoration: InputDecoration(
                   hintText: 'Enter your password',
                   border: InputBorder.none,
@@ -86,8 +131,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget _submitButton() {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => Home()));
+        getData();
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
@@ -215,6 +259,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   _divider(),
                   _facebookButton(),
+                  //  Text('${mytext}')
                 ],
               ),
             ),

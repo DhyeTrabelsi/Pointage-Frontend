@@ -7,9 +7,12 @@ INJECTED from C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et 
 MERGED from C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\android\app\src\main\AndroidManifest.xml:1:1-51:12
 MERGED from [:image_picker] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_appauth] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_appauth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:barcode_scan] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:shared_preferences] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:path_provider] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_secure_storage] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_secure_storage\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:geolocator] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\7def8d6c3751559765cf68c2d5a2dddd\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -24,6 +27,8 @@ MERGED from [me.dm7.barcodescanner:zxing:1.9.13] C:\Users\User\.gradle\caches\tr
 MERGED from [me.dm7.barcodescanner:core:1.9.13] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9802e5e4724a4f4289040824b441db07\jetified-core-1.9.13\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:15:1-46:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\525edb0d8db5484610c43f31557a8e19\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3e2a0fa703037e54c41ba60708c4c8b1\transition-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -38,9 +43,9 @@ MERGED from [androidx.activity:activity:1.0.0] C:\Users\User\.gradle\caches\tran
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\68952fc751baec5d29bcfe7458fdfebc\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\54d8b8735f730e83f07925f758092af3\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -50,8 +55,8 @@ MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\User\.gradle\caches\tran
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\fefdd83516e8eeb5097956f9d9af4b04\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2ca8bc49d3a28fb6fa3bddf429b143ba\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\35bca835e72502cae5588ee7a59cf4b0\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\bce9999f881bb3993a5b24e08740cbbf\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6b1132090a8a1ffc60b82d3452ca52ad\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -100,6 +105,8 @@ MERGED from [me.dm7.barcodescanner:zxing:1.9.13] C:\Users\User\.gradle\caches\tr
 MERGED from [me.dm7.barcodescanner:zxing:1.9.13] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c15f2e194b51694bbd66aeda415aab9d\zxing-1.9.13\AndroidManifest.xml:11:5-20
 MERGED from [me.dm7.barcodescanner:core:1.9.13] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9802e5e4724a4f4289040824b441db07\jetified-core-1.9.13\AndroidManifest.xml:11:5-20
 MERGED from [me.dm7.barcodescanner:core:1.9.13] C:\Users\User\.gradle\caches\transforms-2\files-2.1\9802e5e4724a4f4289040824b441db07\jetified-core-1.9.13\AndroidManifest.xml:11:5-20
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:26:5-44:19
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:26:5-44:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
@@ -166,12 +173,18 @@ MERGED from [:image_picker] C:\Users\User\OneDrive - Ministere de l'Enseignement
 MERGED from [:image_picker] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_appauth] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_appauth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_appauth] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_appauth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:barcode_scan] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:barcode_scan] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\barcode_scan\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\shared_preferences\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_secure_storage] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_secure_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:flutter_secure_storage] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\flutter_secure_storage\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [:geolocator] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:geolocator] C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\build\geolocator\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\dcd5cfbbf6a58afdda2d064ba6109f93\material-1.1.0\AndroidManifest.xml:20:5-44
@@ -200,6 +213,10 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\cach
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\09be4c98f955b63e9a8cadeb6d33d870\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\0986d0d74b8a2c7da8161f6370fc7744\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:20:5-22:41
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f046f38cf99e9cbe4891b184ce64db19\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\525edb0d8db5484610c43f31557a8e19\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -228,12 +245,12 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\User\.
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b046e47c43be2b85609c7f97cccc722e\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ef0bef029ab70f5fb29de019060cf5fd\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5fdf5da548a469ca3cc39dc72a350a99\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1403af03ba6e6e95b13bf5808de0f892\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\6d35bbbe327ef689c582d1173367f0ed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\49ede1f7b9aa322a43288e9745adc2db\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
@@ -252,10 +269,10 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\User\.gradle\caches
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\077300052aa327ee6fc9bbb0ce309b24\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\3a7eb299570065a3866b140e1a95969b\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2ca8bc49d3a28fb6fa3bddf429b143ba\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\2ca8bc49d3a28fb6fa3bddf429b143ba\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b80fad55c42c418cc210e235056767fb\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\35bca835e72502cae5588ee7a59cf4b0\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\35bca835e72502cae5588ee7a59cf4b0\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\bce9999f881bb3993a5b24e08740cbbf\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
@@ -272,6 +289,8 @@ INJECTED from C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et 
 		INJECTED from C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\android\app\src\debug\AndroidManifest.xml:6:5-66
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:24:5-67
+MERGED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from C:\Users\User\OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique\Bureau\pointage_frontend\android\app\src\debug\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.CAMERA
@@ -330,3 +349,39 @@ ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\
 		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ecd333db4667af4b16c39b9a4dbd5cb8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\ecd333db4667af4b16c39b9a4dbd5cb8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+activity#net.openid.appauth.AuthorizationManagementActivity
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:27:9-31:75
+	android:launchMode
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:30:13-44
+	android:exported
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:29:13-37
+	android:theme
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:31:13-72
+	android:name
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:28:13-78
+activity#net.openid.appauth.RedirectUriReceiverActivity
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:32:9-43:20
+	android:exported
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:34:13-36
+	android:name
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:33:13-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:${appAuthRedirectScheme}
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:35:13-42:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:com.auth0.flutterdemo
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:35:13-42:29
+action#android.intent.action.VIEW
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:39:27-75
+data
+ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:41:17-67
+	android:scheme
+		ADDED from [net.openid:appauth:0.7.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4a71daa62018b9a69bf3b4190b5a34e9\jetified-appauth-0.7.1\AndroidManifest.xml:41:23-64
