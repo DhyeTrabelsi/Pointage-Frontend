@@ -10,6 +10,12 @@
 @import barcode_scan;
 #endif
 
+#if __has_include(<camera/CameraPlugin.h>)
+#import <camera/CameraPlugin.h>
+#else
+@import camera;
+#endif
+
 #if __has_include(<flutter_appauth/FlutterAppauthPlugin.h>)
 #import <flutter_appauth/FlutterAppauthPlugin.h>
 #else
@@ -28,6 +34,12 @@
 @import geolocator;
 #endif
 
+#if __has_include(<google_ml_kit/GoogleMlKitPlugin.h>)
+#import <google_ml_kit/GoogleMlKitPlugin.h>
+#else
+@import google_ml_kit;
+#endif
+
 #if __has_include(<image_picker/FLTImagePickerPlugin.h>)
 #import <image_picker/FLTImagePickerPlugin.h>
 #else
@@ -40,10 +52,10 @@
 @import path_provider;
 #endif
 
-#if __has_include(<shared_preferences/FLTSharedPreferencesPlugin.h>)
-#import <shared_preferences/FLTSharedPreferencesPlugin.h>
+#if __has_include(<tflite_flutter/TfliteFlutterPlugin.h>)
+#import <tflite_flutter/TfliteFlutterPlugin.h>
 #else
-@import shared_preferences;
+@import tflite_flutter;
 #endif
 
 #if __has_include(<url_launcher/FLTURLLauncherPlugin.h>)
@@ -56,12 +68,14 @@
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [BarcodeScanPlugin registerWithRegistrar:[registry registrarForPlugin:@"BarcodeScanPlugin"]];
+  [CameraPlugin registerWithRegistrar:[registry registrarForPlugin:@"CameraPlugin"]];
   [FlutterAppauthPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterAppauthPlugin"]];
   [FlutterSecureStoragePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterSecureStoragePlugin"]];
   [GeolocatorPlugin registerWithRegistrar:[registry registrarForPlugin:@"GeolocatorPlugin"]];
+  [GoogleMlKitPlugin registerWithRegistrar:[registry registrarForPlugin:@"GoogleMlKitPlugin"]];
   [FLTImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTImagePickerPlugin"]];
   [FLTPathProviderPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTPathProviderPlugin"]];
-  [FLTSharedPreferencesPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTSharedPreferencesPlugin"]];
+  [TfliteFlutterPlugin registerWithRegistrar:[registry registrarForPlugin:@"TfliteFlutterPlugin"]];
   [FLTURLLauncherPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTURLLauncherPlugin"]];
 }
 

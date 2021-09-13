@@ -1,36 +1,66 @@
+import 'package:pointage/user_chef/homechef.dart';
+import 'package:pointage/user_employe/homeemplye.dart';
 import 'package:flutter/material.dart';
-import 'package:pointage/user/home.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+
 import '../Widget/bezierContainer.dart';
 
 final passwordController = TextEditingController();
 final userController = TextEditingController();
 
+String data0_,
+    data1_,
+    data2_,
+    data3_,
+    data4_,
+    data5_,
+    data6_,
+    data7_,
+    data8_,
+    data9_;
+
 class LoginPage extends StatefulWidget {
   _LoginPageState createState() => _LoginPageState();
 }
 
-//'http://10.0.2.2:8000/employes/login'
-//{"username":userController , "password": passwordController}
 class _LoginPageState extends State<LoginPage> {
-  var login = new LoginPage();
-
-  List mytext = [];
-
   var data;
 
-  Future<List> getData() async {
-    String url = 'http://10.0.2.2:8000/employes/login';
-    var response = await http.post(Uri.encodeFull(url), headers: {
+  Future<List> getdata() async {
+    String url6 = 'http://192.168.1.15:8000/login/';
+    var response6 = await http.post(Uri.encodeFull(url6), headers: {
       "Accept": "application/json"
     }, body: {
-      "username": userController.text,
-      "password": passwordController.text
+      "username": userController.text.toString(),
+      "password": passwordController.text.toString()
     });
-    data = (json.decode(response.body));
+    data = (json.decode(response6.body));
+    print(data["jwt"]);
     if (data["jwt"] != null) {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+      data1_ = userController.text;
+      data2_ = data["data"]["cin"].toString();
+      data0_ = passwordController.text;
+      data3_ = data["data"]["email"].toString();
+      data4_ = data["data"]["telephone"].toString();
+      data5_ = data["data"]["codeQR"].toString();
+      data6_ = data["data"]["first_name"].toString();
+      data7_ = data["data"]["last_name"].toString();
+      data8_ = data["data"]["poste"].toString();
+      data9_ = data["data"]["image"].toString();
+      if (data["data"]["poste"] == "employe") {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => homePage()));
+        userController.clear();
+        passwordController.clear();
+      } else if (data["data"]["poste"] == "employe") {
+        data0_ = passwordController.text;
+
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => homePagechef()));
+        userController.clear();
+        passwordController.clear();
+      }
     } else {
       showDialog<String>(
           context: context,
@@ -48,32 +78,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ));
+      passwordController.clear();
     }
     //  return List<Map<String, dynamic>>.from(json.decode(response.body));
-  }
-
-  Widget _backButton() {
-    return InkWell(
-      onTap: () {
-        Navigator.pop(context);
-      },
-      child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10),
-        child: Row(
-          children: <Widget>[
-            SizedBox(
-              height: 100,
-            ),
-            Container(
-              padding: EdgeInsets.only(left: 0, top: 10, bottom: 10),
-              child: Icon(Icons.keyboard_arrow_left, color: Colors.black),
-            ),
-            Text('Back',
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500))
-          ],
-        ),
-      ),
-    );
   }
 
   Widget _entryFieldUser(String title, {bool isPassword = false}) {
@@ -124,33 +131,6 @@ class _LoginPageState extends State<LoginPage> {
                   fillColor: Color(0xfff3f3f4),
                   filled: true))
         ],
-      ),
-    );
-  }
-
-  Widget _submitButton() {
-    return InkWell(
-      onTap: () {
-        getData();
-      },
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 15),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(5)),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.grey.shade200,
-                  offset: Offset(2, 4),
-                  blurRadius: 5,
-                  spreadRadius: 2)
-            ],
-            color: Color(0xff96BAFF)),
-        child: Text(
-          'Login',
-          style: TextStyle(fontSize: 20, color: Colors.white),
-        ),
       ),
     );
   }
@@ -236,7 +216,6 @@ class _LoginPageState extends State<LoginPage> {
               right: -MediaQuery.of(context).size.width * .4,
               child: BezierContainer()),
 
-          _backButton(),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: SingleChildScrollView(
@@ -249,7 +228,30 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 50),
                   _emailPasswordWidget(),
                   SizedBox(height: 20),
-                  _submitButton(),
+                  InkWell(
+                    onTap: () {
+                      getdata();
+                    },
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(5)),
+                          boxShadow: <BoxShadow>[
+                            BoxShadow(
+                                color: Colors.grey.shade200,
+                                offset: Offset(2, 4),
+                                blurRadius: 5,
+                                spreadRadius: 2)
+                          ],
+                          color: Color(0xff96BAFF)),
+                      child: Text(
+                        'Login',
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ),
+                  ),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10),
                     alignment: Alignment.centerRight,

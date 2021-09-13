@@ -1,6 +1,8 @@
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
-import 'package:pointage/user/home.dart';
+import '/startone/loginPage.dart';
+import '/user_employe/homeemplye.dart';
+import 'package:http/http.dart' as http;
 
 class ScanPage extends StatefulWidget {
   @override
@@ -15,6 +17,81 @@ class _ScanPageState extends State<ScanPage> {
   var trouve = 0;
 
   int camera = 1;
+
+  finish() {
+    if (DateTime.now().hour.toInt() < 17) {
+      sendpointage();
+      print('yes');
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => homePage()));
+    } else if ((DateTime.now().hour.toInt() < 18) &&
+        (DateTime.now().minute.toInt() < 30)) {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => homePage()));
+      sendpointageavecretard();
+    } else {
+      showDialog<String>(
+        context: context,
+        builder: (BuildContext context) => AlertDialog(
+          title: const Text('invalid pointed!',
+              style: TextStyle(fontWeight: FontWeight.bold)),
+          content: const Text(
+            "You exceeded the delay limit. You are absent",
+            textAlign: TextAlign.justify,
+          ),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () => Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => homePage())),
+              child: const Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
+  }
+
+  Future<List> sendpointageavecretard() async {
+    String url4 = 'http://192.168.1.5:8000/api/pointages/list/';
+
+    var response4 = await http.post(Uri.encodeFull(url4), headers: {
+      "Accept": "application/json"
+    }, body: {
+      "entre": DateTime.now().hour.toString() +
+          ':' +
+          DateTime.now().minute.toString(),
+      "sortie": "13:00",
+      "date": DateTime.now().day.toString() +
+          '/' +
+          DateTime.now().month.toString() +
+          '/' +
+          DateTime.now().year.toString(),
+      "retard": DateTime.now().minute.toString(),
+      "absance": "Non",
+      "user": data1_.toString()
+    });
+  }
+
+  Future<List> sendpointage() async {
+    String url4 = 'http://10.0.2.2:8000/api/pointages/list/';
+
+    var response4 = await http.post(Uri.encodeFull(url4), headers: {
+      "Accept": "application/json"
+    }, body: {
+      "entre": DateTime.now().hour.toString() +
+          ':' +
+          DateTime.now().minute.toString(),
+      "sortie": "13:00",
+      "date": DateTime.now().day.toString() +
+          '/' +
+          DateTime.now().month.toString() +
+          '/' +
+          DateTime.now().year.toString(),
+      "retard": "Pas de retard",
+      "absance": "Non",
+      "user": data1_.toString()
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -55,7 +132,7 @@ class _ScanPageState extends State<ScanPage> {
                           height: 10.0,
                         ),
                         Text(
-                          "Get QR code ",
+                          "Get QR code",
                           style: TextStyle(
                             fontSize: 25.0,
                             fontWeight: FontWeight.bold,
@@ -67,19 +144,28 @@ class _ScanPageState extends State<ScanPage> {
                         ),
                         _scanButton(),
                         SizedBox(
-                          height: 80.0,
+                          height: 70.0,
                         ),
                         Center(
                           child: Text(
-                            (qrCodeResult == null) || (qrCodeResult == "")
-                                ? "Please Scan to Show result"
-                                : "" + qrCodeResult,
+                            (qrCodeResult != data5_) || (qrCodeResult == "")
+                                ? "Please Scan your codeQR"
+                                : "",
+                            style: TextStyle(
+                                fontSize: 20.0, fontWeight: FontWeight.w900),
+                          ),
+                        ),
+                        Center(
+                          child: Text(
+                            (qrCodeResult == data5_.toString())
+                                ? "Right codeQR"
+                                : "",
                             style: TextStyle(
                                 fontSize: 20.0, fontWeight: FontWeight.w900),
                           ),
                         ),
                         SizedBox(
-                          height: 80.0,
+                          height: 60.0,
                         ),
                         Text("You can Check your camera at first !",
                             style: new TextStyle(color: Colors.white)),
@@ -97,10 +183,10 @@ class _ScanPageState extends State<ScanPage> {
                                   style: ElevatedButton.styleFrom(
                                     primary: Color(0xff0A043C), // background
                                   ),
-                                  onPressed: this.trouve == 0
+                                  onPressed: (qrCodeResult != data5_)
                                       ? null
                                       : () => setState(() => finish()),
-                                  child: const Text('NEXT'),
+                                  child: const Text('MAKE POINTED'),
                                 ),
                               ])),
                     ]))));
@@ -162,9 +248,5 @@ class _ScanPageState extends State<ScanPage> {
         ),
       ),
     );
-  }
-
-  finish() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
   }
 }

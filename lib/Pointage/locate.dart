@@ -1,6 +1,11 @@
+import 'package:camera/camera.dart';
+import 'package:pointage/reconaisance%20facial/pages/db/database.dart';
+import 'package:pointage/reconaisance%20facial/pages/sign-in.dart';
+import 'package:pointage/reconaisance%20facial/services/facenet.service.dart';
+import 'package:pointage/reconaisance%20facial/services/ml_kit_service.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:pointage/reconnaisance_facial/services/cam_one.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 class Locate extends StatefulWidget {
@@ -15,6 +20,46 @@ class _LocateState extends State<Locate> {
   String longitude;
 
   int trouve = 0;
+  FaceNetService _faceNetService = FaceNetService();
+  MLKitService _mlKitService = MLKitService();
+  DataBaseService _dataBaseService = DataBaseService();
+
+  CameraDescription cameraDescription;
+  bool loading = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _startUp();
+  }
+
+  /// 1 Obtain a list of the available cameras on the device.
+  /// 2 loads the face net model
+  _startUp() async {
+    _setLoading(true);
+
+    List<CameraDescription> cameras = await availableCameras();
+
+    /// takes the front camera
+    cameraDescription = cameras.firstWhere(
+      (CameraDescription camera) =>
+          camera.lensDirection == CameraLensDirection.front,
+    );
+
+    // start the services
+    await _faceNetService.loadModel();
+    await _dataBaseService.loadDB();
+    _mlKitService.initialize();
+
+    _setLoading(false);
+  }
+
+  // shows or hides the circular progress indicator
+  _setLoading(bool value) {
+    setState(() {
+      loading = value;
+    });
+  }
 
   // function for getting the current location
   // but before that you need to add this permission!
@@ -29,15 +74,15 @@ class _LocateState extends State<Locate> {
     longitude = "$long";
 
     setState(() {
-      if (lat >= 31.000 && lat <= 35.000 && long >= 10.000 && long <= 11.000)
+      if (lat >= 33.00 && lat <= 35.000 && long >= 10.000 && long <= 11.000)
         setState(() {
           this.trouve = 1;
-          locationMessage = "Location valide";
+          locationMessage = "Valid Location";
         });
       else {
         setState(() {
           this.trouve = 0;
-          locationMessage = "Location not valide";
+          locationMessage = "Wrong Location";
         });
       }
     });
@@ -214,6 +259,12 @@ class _LocateState extends State<Locate> {
   }
 
   movereconaisance() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => CamOpen()));
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => SignIn(
+            cameraDescription: cameraDescription,
+          ),
+        ));
   }
 }
