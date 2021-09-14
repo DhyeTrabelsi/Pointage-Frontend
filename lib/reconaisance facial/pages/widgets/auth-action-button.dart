@@ -29,7 +29,7 @@ class _AuthActionButtonState extends State<AuthActionButton> {
 
   User predictedUser;
   Future<List> modifData() async {
-    String url2 = 'http://192.168.1.15:8000/update/' + '${data1_}' + '/';
+    String url2 = 'http://192.168.1.52:8000/update/' + '${data1_}' + '/';
     var response2 = await http.put(Uri.encodeFull(url2),
         headers: {"Accept": "application/json"},
         body: jsonEncode(<String, String>{
@@ -166,7 +166,7 @@ class _AuthActionButtonState extends State<AuthActionButton> {
                 widget.isLogin && predictedUser != null
                     ? predictedUser.user == data1_
                         ? AppButton(
-                            text: 'LOGIN',
+                            text: 'CONTINUE',
                             onPressed: () async {
                               _signIn(context);
                             },

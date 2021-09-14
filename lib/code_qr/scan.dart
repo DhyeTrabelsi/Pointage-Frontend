@@ -19,16 +19,17 @@ class _ScanPageState extends State<ScanPage> {
   int camera = 1;
 
   finish() {
-    if (DateTime.now().hour.toInt() < 17) {
+    if (DateTime.now().hour.toInt() < 10) {
       sendpointage();
-      print('yes');
+      importpointages();
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => homePage()));
-    } else if ((DateTime.now().hour.toInt() < 18) &&
+    } else if ((DateTime.now().hour.toInt() < 11) &&
         (DateTime.now().minute.toInt() < 30)) {
+      importpointages();
+      sendpointageavecretard();
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => homePage()));
-      sendpointageavecretard();
     } else {
       showDialog<String>(
         context: context,
@@ -52,7 +53,7 @@ class _ScanPageState extends State<ScanPage> {
   }
 
   Future<List> sendpointageavecretard() async {
-    String url4 = 'http://192.168.1.5:8000/api/pointages/list/';
+    String url4 = 'http://192.168.1.52:8000/api/pointages/list/';
 
     var response4 = await http.post(Uri.encodeFull(url4), headers: {
       "Accept": "application/json"
@@ -66,14 +67,14 @@ class _ScanPageState extends State<ScanPage> {
           DateTime.now().month.toString() +
           '/' +
           DateTime.now().year.toString(),
-      "retard": DateTime.now().minute.toString(),
+      "retard": DateTime.now().minute.toString() + 'minutes',
       "absance": "Non",
       "user": data1_.toString()
     });
   }
 
   Future<List> sendpointage() async {
-    String url4 = 'http://10.0.2.2:8000/api/pointages/list/';
+    String url4 = 'http://192.168.1.52:8000/api/pointages/list/';
 
     var response4 = await http.post(Uri.encodeFull(url4), headers: {
       "Accept": "application/json"

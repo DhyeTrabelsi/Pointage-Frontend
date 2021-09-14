@@ -18,7 +18,7 @@ const _kPages = <String, IconData>{
   'travail': Icons.location_on,
 };
 Future<List> importmissionschef() async {
-  String url = 'http://192.168.1.15:8000/api/missions/list/';
+  String url = 'http://192.168.1.52:8000/api/missions/list/';
   print(url);
   var response = await http
       .get(Uri.encodeFull(url), headers: {"Accept": "application/json"});
@@ -27,7 +27,7 @@ Future<List> importmissionschef() async {
 }
 
 Future<List> importpointageschef() async {
-  String url2 = 'http://192.168.1.15:8000/api/pointages/list/';
+  String url2 = 'http://192.168.1.52:8000/api/pointages/list/';
   print(url2);
   var response2 = await http
       .get(Uri.encodeFull(url2), headers: {"Accept": "application/json"});

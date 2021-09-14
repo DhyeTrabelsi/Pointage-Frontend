@@ -25,12 +25,14 @@ class _Missionchef extends State<Missionschef> {
   }
 
   Future<List> sendanulle(int j) async {
+    importmissionschef();
+
     Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => homePagechef()),
         (Route<dynamic> route) => false);
     int h = datamissionchef[j]["id"];
-    String url4 = 'http://192.168.1.15:8000/api/mission/' + '${h}' + '/finish/';
+    String url4 = 'http://192.168.1.52:8000/api/mission/' + '${h}' + '/finish/';
 
     var response4 = await http.put(Uri.encodeFull(url4), headers: {
       "Accept": "application/json"
@@ -39,7 +41,7 @@ class _Missionchef extends State<Missionschef> {
       "date_debut": (datamissionchef[j]["date_debut"]).toString(),
       "date_fin": (datamissionchef[j]["date_fin"]).toString(),
       "lieu": (datamissionchef[j]["lieu"]).toString(),
-      "état": "drop",
+      "etat": "droped",
       "user": data1_.toString()
     });
   }
@@ -75,12 +77,14 @@ class _Missionchef extends State<Missionschef> {
   }
 
   Future<List> sendfinish(int j) async {
+    importmissionschef();
+
     Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => homePagechef()),
         (Route<dynamic> route) => false);
     int h = datamissionchef[j]["id"];
-    String url5 = 'http://192.168.1.5:8000/api/mission/' + '${h}' + '/finish/';
+    String url5 = 'http://192.168.1.52:8000/api/mission/' + '${h}' + '/finish/';
 
     var response5 = await http.put(Uri.encodeFull(url5), headers: {
       "Accept": "application/json"

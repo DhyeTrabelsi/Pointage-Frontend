@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
   var data;
 
   Future<List> getdata() async {
-    String url6 = 'http://192.168.1.15:8000/login/';
+    String url6 = 'http://192.168.1.52:8000/login/';
     var response6 = await http.post(Uri.encodeFull(url6), headers: {
       "Accept": "application/json"
     }, body: {
@@ -53,9 +53,7 @@ class _LoginPageState extends State<LoginPage> {
             context, MaterialPageRoute(builder: (context) => homePage()));
         userController.clear();
         passwordController.clear();
-      } else if (data["data"]["poste"] == "employe") {
-        data0_ = passwordController.text;
-
+      } else if (data["data"]["poste"] == "chef chantier") {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => homePagechef()));
         userController.clear();

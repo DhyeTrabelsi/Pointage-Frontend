@@ -19,7 +19,7 @@ const _kPages = <String, IconData>{
 };
 Future<List> importsalaires() async {
   String urlsalaires =
-      'http://192.168.1.15:8000/api/salaires/' + '${data1_}' + '/';
+      'http://192.168.1.52:8000/api/salaires/' + '${data1_}' + '/';
   var responsesalaires = await http.get(Uri.encodeFull(urlsalaires),
       headers: {"Accept": "application/json"});
   datasalaires = (json.decode(responsesalaires.body));
@@ -28,7 +28,7 @@ Future<List> importsalaires() async {
 
 Future<List> importmissions() async {
   String urlmissions =
-      'http://192.168.1.15:8000/api/missions/' + '${data1_}' + '/';
+      'http://192.168.1.52:8000/api/missions/' + '${data1_}' + '/';
   var responsemissions = await http.get(Uri.encodeFull(urlmissions),
       headers: {"Accept": "application/json"});
   datamission = (json.decode(responsemissions.body));
@@ -37,7 +37,7 @@ Future<List> importmissions() async {
 
 Future<List> importpointages() async {
   String urlpointages =
-      'http://192.168.1.15:8000/api/pointages/' + '${data1_}' + '/';
+      'http://192.168.1.52:8000/api/pointages/' + '${data1_}' + '/';
   var responsepointages = await http.get(Uri.encodeFull(urlpointages),
       headers: {"Accept": "application/json"});
   datapointages = (json.decode(responsepointages.body));

@@ -32,7 +32,7 @@ class _Mission extends State<Missions> {
         MaterialPageRoute(builder: (context) => homePage()),
         (Route<dynamic> route) => false);
     int h = datamission[j]["id"];
-    String url4 = 'http://192.168.1.15:8000/api/mission/' + '${h}' + '/start/';
+    String url4 = 'http://192.168.1.52:8000/api/mission/' + '${h}' + '/start/';
 
     var response4 = await http.put(Uri.encodeFull(url4), headers: {
       "Accept": "application/json"
